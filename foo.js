@@ -1,6 +1,7 @@
 function foo(bar) {
-    return "Hello, " + bar;
+    return "Hello, " + bar.quuz + " " + bar.corge;
 }
-var baz = [1, 2, 3];
-console.log(foo());
+var baz = {
+    quuz: "ABC", corge: 123
+};
 console.log(foo(baz));

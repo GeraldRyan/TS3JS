@@ -1,7 +1,15 @@
-function foo(bar: "car"|"bus"| number) {
-  return "Hello, " + bar;
+interface Quux {
+  quuz: string;
+  corge: number;
 }
 
-let baz = "ABC";
+function foo(bar: Quux) {
+  return "Hello, " + bar.quuz + " " + bar.corge;
+}
 
-console.log(foo(1));
+let baz: Quux = {
+  quuz: "ABC",
+  corge: 123,
+};
+
+console.log(foo(baz));
