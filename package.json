@@ -1,0 +1,19 @@
+{
+  "name": "ts3js",
+  "version": "1.0.0",
+  "description": "TypeScript &amp; Three.js Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeraldRyan/TS3JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeraldRyan/TS3JS/issues"
+  },
+  "homepage": "https://github.com/GeraldRyan/TS3JS#readme"
+}
