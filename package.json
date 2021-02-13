@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "TypeScript &amp; Three.js Tutorial",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "@types/node": "^14.14.26",
     "express": "^4.17.1",
     "three": "^0.125.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   }
 }
