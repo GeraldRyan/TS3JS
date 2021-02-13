@@ -1,6 +1,6 @@
-import http from "http"
-import path from "path"
 import express from "express"
+import path from "path"
+import http from "http"
 
 const port: number = 3000
 
@@ -12,6 +12,7 @@ class App {
         this.port = port
         const app = express()
         app.use(express.static(path.join(__dirname, '../client')))
+        app.use('/build/three.module.js', express.static(path.join(__dirname, '../../node_modules/three/build/three.module.js')))
 
         this.server = new http.Server(app);
     }
